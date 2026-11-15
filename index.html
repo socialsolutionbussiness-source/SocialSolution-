@@ -1,0 +1,1511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2a7a">
+<meta property="og:title" content="Social Solution | Your Digital Growth Partner">
+<meta property="og:description" content="A creative agency that works like an in-house creative team.">
+<title>Social Solution</title>
+<meta name="description" content="Social Solution is a creative agency that works like an in-house creative team.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+html{color-scheme:light}body{margin:0}
+/* Layout: sticky header over a pale-blue hero with a floating 3D scene on the right, then card sections, a deep-blue contact band and footer. */
+:root {
+  --font-display: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --bg: #ffffff;
+  --bg-soft: #f0f5ff;
+  --surface: #ffffff;
+  --ink: #0b1735;
+  --ink-strong: #0a1a4f;
+  --muted: #4a5878;
+  --line: #d9e3f8;
+  --link: #1740b8;
+  --accent-text: #2158d9;
+  --brand-tint: #dbe7ff;
+  --brand-light: #6b9bff;
+  --brand-mid: #3b73f0;
+  --grad-a: #3b73f0;
+  --grad-b: #0f2a7a;
+  --btn-a: #2158d9;
+  --btn-b: #0f2a7a;
+
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --header-solid: #ffffff;
+  --hero-glow-a: #dbe7ff;
+  --hero-glow-b: #e6efff;
+  --shadow-sm: 0 2px 8px rgba(15, 42, 122, 0.08);
+  --shadow-md: 0 14px 34px -14px rgba(15, 42, 122, 0.28);
+  --shadow-lg: 0 34px 60px -26px rgba(15, 42, 122, 0.45);
+  --tint-opacity: 0.55;
+
+  --scene-card: #ffffff;
+  --scene-card-2: #e8f1ff;
+  --cell: #f0f5ff;
+  --tl3: #0a1a4f;
+  --vf-a: #c7d9ff;
+  --vf-b: #6b9bff;
+
+  --tag-you-bg: #0a1a4f;
+  --tag-us-bg: #dbe7ff;
+  --tag-us-fg: #0f2a7a;
+  --chip-fg: #0f2a7a;
+
+  --p1: #0a1a4f;
+  --p2: #1740b8;
+  --p3: #3b73f0;
+  --p4: #9fc0ff;
+
+  --band-a: #0a1a4f;
+  --band-b: #0f2a7a;
+  --on-band: #ffffff;
+  --on-band-muted: #d6e2ff;
+  --on-band-kicker: #b9ceff;
+  --footer-bg: #071240;
+  --footer-ink: #c9d6f5;
+
+  --light-bg: #ffffff;
+  --light-fg: #0f2a7a;
+  --light-hover: #f0f5ff;
+  --wa: #0f7a43;
+  --wa-hover: #0b6537;
+
+  --header-h: 72px;
+  --radius: 24px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { 
+    --bg: #081030; --bg-soft: #0b1640; --surface: #101c4a;
+    --ink: #e8eeff; --ink-strong: #f4f7ff; --muted: #aab8de; --line: #22346e;
+    --link: #8fb4ff; --accent-text: #86adff; --brand-tint: #233676;
+    --header-bg: rgba(8, 16, 48, 0.88); --header-solid: #081030;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35); --shadow-md: 0 14px 34px -14px rgba(0, 0, 0, 0.6); --shadow-lg: 0 34px 60px -26px rgba(0, 0, 0, 0.75);
+    --tint-opacity: 0.16;
+    --tag-you-bg: #2f5fd6; --tag-us-bg: #243a80; --tag-us-fg: #cfdcff; --chip-fg: #cfdcff;
+    --p1: #243b8f; --p2: #2f55c8; --p3: #5b8cf5; --p4: #a9c6ff;
+    --band-a: #0c1a52; --band-b: #07123a; --footer-bg: #040a22;
+     color-scheme: dark; }
+}
+:root[data-theme="dark"] { 
+    --bg: #081030; --bg-soft: #0b1640; --surface: #101c4a;
+    --ink: #e8eeff; --ink-strong: #f4f7ff; --muted: #aab8de; --line: #22346e;
+    --link: #8fb4ff; --accent-text: #86adff; --brand-tint: #233676;
+    --header-bg: rgba(8, 16, 48, 0.88); --header-solid: #081030;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35); --shadow-md: 0 14px 34px -14px rgba(0, 0, 0, 0.6); --shadow-lg: 0 34px 60px -26px rgba(0, 0, 0, 0.75);
+    --tint-opacity: 0.16;
+    --tag-you-bg: #2f5fd6; --tag-us-bg: #243a80; --tag-us-fg: #cfdcff; --chip-fg: #cfdcff;
+    --p1: #243b8f; --p2: #2f55c8; --p3: #5b8cf5; --p4: #a9c6ff;
+    --band-a: #0c1a52; --band-b: #07123a; --footer-bg: #040a22;
+     color-scheme: dark; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + env(safe-area-inset-top, 0px) + 12px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--header-solid);
+}
+
+svg { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; line-height: 1.15; letter-spacing: -0.02em; font-family: var(--font-display); text-wrap: balance; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+.container {
+  width: 100%; max-width: 1160px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute; left: 1rem; top: -4rem; z-index: 200;
+  padding: 0.7rem 1rem; border-radius: 10px;
+  background: var(--surface); color: var(--link); font-weight: 600; box-shadow: var(--shadow-md);
+}
+.skip-link:focus { top: calc(1rem + env(safe-area-inset-top, 0px)); }
+
+:focus-visible { outline: 3px solid var(--brand-mid); outline-offset: 3px; }
+.on-dark :focus-visible, .site-footer :focus-visible { outline-color: #ffffff; }
+
+/* Icons */
+.icon {
+  width: 1.25em; height: 1.25em; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.icon-fill { fill: currentColor; stroke: none; }
+
+/* Buttons */
+.btn {
+  --bg-b: transparent; --fg-b: var(--link); --bd-b: var(--brand-mid);
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+  min-height: 48px; padding: 0.75rem 1.5rem;
+  border: 2px solid var(--bd-b); border-radius: 999px;
+  background: var(--bg-b); color: var(--fg-b);
+  font: inherit; font-weight: 650; text-decoration: none; text-align: center;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.btn:active { transform: translateY(0); }
+.btn-primary {
+  --bg-b: linear-gradient(135deg, var(--btn-a), var(--btn-b)); --fg-b: #ffffff; --bd-b: transparent;
+  box-shadow: 0 12px 24px -10px rgba(23, 64, 184, 0.7);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 30px -12px rgba(23, 64, 184, 0.85); }
+.btn-secondary { --bg-b: var(--surface); --fg-b: var(--link); --bd-b: var(--line); }
+.btn-secondary:hover { --bd-b: var(--link); --bg-b: var(--bg-soft); transform: translateY(-2px); }
+.btn-light { --bg-b: var(--light-bg); --fg-b: var(--light-fg); --bd-b: var(--light-bg); }
+.btn-light:hover { --bg-b: var(--light-hover); transform: translateY(-2px); box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.5); }
+.btn-sm { min-height: 42px; padding: 0.5rem 1.1rem; font-size: 0.95rem; }
+
+/* Header */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 100;
+  height: var(--header-h);
+  background: var(--header-bg);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px); backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.site-header.is-scrolled { border-color: var(--line); box-shadow: 0 10px 26px -18px rgba(15, 42, 122, 0.45); }
+.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+
+.brand {
+  display: inline-flex; align-items: center; gap: 0.7rem; text-decoration: none;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink-strong); border-radius: 12px;
+}
+.brand-mark {
+  width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+  color: #ffffff; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em;
+  background: linear-gradient(145deg, var(--grad-a), var(--grad-b));
+  box-shadow: 3px 3px 0 var(--brand-tint), 0 10px 18px -8px rgba(23, 64, 184, 0.6);
+}
+
+.nav ul { display: flex; gap: 0.25rem; }
+.nav a {
+  display: block; padding: 0.55rem 0.95rem; border-radius: 999px; text-decoration: none;
+  font-weight: 500; color: var(--muted); transition: color 0.2s, background-color 0.2s;
+}
+.nav a:hover, .nav a[aria-current="true"] { color: var(--link); background: var(--bg-soft); }
+.header-actions { display: flex; align-items: center; gap: 0.6rem; }
+
+.nav-toggle {
+  display: none; width: 44px; height: 44px; padding: 0; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--surface); cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+}
+.nav-toggle span { display: block; width: 20px; height: 2px; border-radius: 2px; background: var(--ink-strong); transition: transform 0.25s ease, opacity 0.2s; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 859px) {
+  .nav-toggle { display: inline-flex; }
+  .nav {
+    position: absolute; left: 0; right: 0; top: 100%; display: none;
+    padding: 0.75rem max(16px, env(safe-area-inset-right, 0px)) 1rem max(16px, env(safe-area-inset-left, 0px));
+    background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: 0 24px 30px -22px rgba(15, 42, 122, 0.5);
+  }
+  .nav.is-open { display: block; }
+  .nav ul { flex-direction: column; }
+  .nav a { padding: 0.85rem 1rem; font-size: 1.05rem; }
+}
+@media (max-width: 400px) {
+  .brand-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* Sections */
+.section { position: relative; padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+.section-tint { background: linear-gradient(180deg, var(--bg-soft), var(--bg)); }
+.section-head { max-width: 720px; margin-bottom: clamp(2rem, 4vw, 3.2rem); }
+.section-head.center { margin-inline: auto; text-align: center; }
+.kicker { display: inline-block; margin-bottom: 0.8rem; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-text); }
+.section h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); color: var(--ink-strong); }
+.section-head p { margin-top: 1rem; color: var(--muted); font-size: 1.08rem; }
+
+.section-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem;
+  margin-top: clamp(2rem, 4vw, 3rem); padding: 1.5rem 1.8rem;
+  border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-md);
+}
+.section-cta p { font-weight: 600; font-size: 1.15rem; color: var(--ink-strong); max-width: 38ch; min-width: 0; }
+.cta-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+/* Why */
+.why-grid { display: grid; gap: 2.5rem; align-items: center; margin-bottom: clamp(2rem, 4vw, 3rem); }
+@media (min-width: 900px) { .why-grid { grid-template-columns: 1.1fr 0.9fr; gap: 4rem; } }
+.why-copy { min-width: 0; }
+.why-copy p { margin-top: 1.1rem; color: var(--muted); font-size: 1.08rem; max-width: 58ch; }
+.audience { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
+.audience li { padding: 0.4rem 1rem; border-radius: 999px; font-weight: 600; font-size: 0.95rem; color: var(--chip-fg); background: var(--bg-soft); border: 1px solid var(--line); }
+
+.stack-wrap { display: grid; justify-items: center; gap: 1.2rem; min-width: 0; }
+.stack {
+  position: relative; width: min(60%, 270px); aspect-ratio: 1; margin: clamp(2rem, 6vw, 4rem) 0 clamp(2.5rem, 7vw, 4.5rem);
+  transform-style: preserve-3d; transform: perspective(1200px) rotateX(58deg) rotateZ(-38deg); animation: stack-turn 10s ease-in-out infinite;
+}
+@keyframes stack-turn {
+  0%, 100% { transform: perspective(1200px) rotateX(58deg) rotateZ(-38deg); }
+  50% { transform: perspective(1200px) rotateX(58deg) rotateZ(-30deg); }
+}
+.plate { position: absolute; inset: 0; border-radius: 1.4rem; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28); }
+.p1 { background: var(--p1); transform: translateZ(0); box-shadow: 40px 40px 60px -20px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.2); }
+.p2 { background: var(--p2); transform: translateZ(48px); }
+.p3 { background: var(--p3); transform: translateZ(96px); }
+.p4 { background: var(--p4); transform: translateZ(144px); }
+.stack-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.stack-legend li { padding: 0.3rem 0.9rem; border-radius: 999px; font-size: 0.88rem; font-weight: 700; }
+.l1 { background: var(--p1); color: #ffffff; }
+.l2 { background: var(--p2); color: #ffffff; }
+.l3 { background: var(--p3); color: #05123a; }
+.l4 { background: var(--p4); color: #05123a; }
+@supports not (transform-style: preserve-3d) {
+  .stack { transform: none; animation: none; aspect-ratio: auto; display: grid; gap: 0.6rem; width: min(70%, 280px); }
+  .plate { position: relative; inset: auto; height: 54px; transform: none; }
+}
+
+.benefits { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.benefits > li { display: flex; gap: 1rem; align-items: flex-start; min-width: 0; padding: 1.5rem; border-radius: 20px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.benefits > li > div { min-width: 0; }
+.check { flex: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 12px; color: #ffffff; background: linear-gradient(145deg, var(--grad-a), var(--grad-b)); box-shadow: 3px 3px 0 var(--brand-tint); }
+.benefits h3 { font-size: 1.1rem; color: var(--ink-strong); margin-bottom: 0.3rem; }
+.benefits p { color: var(--muted); font-size: 0.98rem; }
+
+/* Contact */
+.contact {
+  color: var(--on-band);
+  background:
+    radial-gradient(44rem 24rem at 90% 0%, rgba(59, 115, 240, 0.45), transparent 60%),
+    radial-gradient(36rem 22rem at 0% 100%, rgba(107, 155, 255, 0.25), transparent 60%),
+    linear-gradient(160deg, var(--band-a), var(--band-b));
+}
+.contact h2 { color: var(--on-band); }
+.contact .kicker { color: var(--on-band-kicker); }
+.contact .section-head p { color: var(--on-band-muted); }
+.contact .section-head .founder { font-weight: 700; color: var(--on-band); }
+
+.contact-grid { display: grid; gap: 1.25rem; perspective: 1400px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+.contact-grid > li { min-width: 0; }
+.contact-card {
+  height: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; padding: 1.7rem 1.5rem;
+  border-radius: var(--radius); background: rgba(255, 255, 255, 0.09); border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 24px 40px -26px rgba(0, 0, 0, 0.6); transition: transform 0.3s ease, background-color 0.3s;
+}
+.contact-icon { width: 52px; height: 52px; margin-bottom: 0.5rem; display: grid; place-items: center; border-radius: 15px; color: var(--light-fg); background: var(--light-bg); font-size: 1.35rem; box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.28); }
+.contact-card h3 { font-size: 1.2rem; color: var(--on-band); }
+.value-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 0.7rem; padding-bottom: 0.9rem; max-width: 100%; }
+.contact-value { color: var(--on-band-muted); overflow-wrap: anywhere; user-select: text; -webkit-user-select: text; }
+.contact-card > .contact-value { padding-bottom: 0.9rem; }
+.contact-card .btn { width: 100%; margin-top: auto; }
+.copy-btn {
+  min-height: 32px; padding: 0.2rem 0.8rem; border-radius: 999px; font: inherit; font-size: 0.82rem; font-weight: 600;
+  color: var(--on-band); background: transparent; border: 1px solid rgba(255, 255, 255, 0.45); cursor: pointer;
+  transition: background-color 0.2s;
+}
+.copy-btn:hover { background: rgba(255, 255, 255, 0.16); }
+@media (hover: hover) { .contact-card:hover { transform: translateY(-6px) rotateX(3deg); background: rgba(255, 255, 255, 0.14); } }
+
+/* Footer */
+.site-footer { background: var(--footer-bg); color: var(--footer-ink); padding: 3.5rem 0 7rem; }
+.footer-grid { display: grid; gap: 2.2rem; }
+@media (min-width: 860px) { .footer-grid { grid-template-columns: 1.3fr 1.2fr 0.8fr; gap: 3rem; } }
+.footer-grid > * { min-width: 0; }
+.brand-light { color: #ffffff; }
+.brand-light .brand-mark { box-shadow: 3px 3px 0 rgba(255, 255, 255, 0.25); }
+.footer-brand p { margin-top: 1rem; max-width: 36ch; }
+.footer-brand .footer-founder { margin-top: 0.6rem; color: #ffffff; font-weight: 600; }
+.footer-title { font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: #ffffff; margin-bottom: 1rem; }
+.footer-col ul { display: grid; gap: 0.35rem; }
+.footer-col li a { display: inline-block; padding: 0.3rem 0; color: var(--footer-ink); text-decoration: none; overflow-wrap: anywhere; }
+.footer-col li a:hover { color: #ffffff; text-decoration: underline; }
+.footer-wa { margin-top: 1.2rem; }
+.footer-bottom { margin-top: 2.5rem; font-size: 0.92rem; }
+.footer-bottom p { padding-top: 1.4rem; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+
+/* Floating WhatsApp */
+.wa-float {
+  position: fixed; z-index: 90;
+  right: calc(1rem + env(safe-area-inset-right, 0px));
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  display: inline-flex; align-items: center; gap: 0.55rem; min-height: 54px; padding: 0 1.2rem 0 1rem; border-radius: 999px;
+  background: var(--wa); color: #ffffff; font-weight: 650; text-decoration: none;
+  box-shadow: 0 14px 28px -10px rgba(7, 60, 34, 0.7), 0 0 0 3px var(--bg);
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+.wa-float:hover { background: var(--wa-hover); transform: translateY(-2px); }
+.wa-float .icon { font-size: 1.4rem; }
+@media (max-width: 639px) {
+  .wa-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wa-float { width: 54px; padding: 0; justify-content: center; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
+  .btn:hover, .wa-float:hover, .service-card:hover, .contact-card:hover { transform: none; }
+}
+
+/* ==========================================================================
+   v2: immersive hero, bento services, animated journey, guide character
+   ========================================================================== */
+
+.btn-glass { --bg-b: rgba(255, 255, 255, 0.08); --fg-b: #ffffff; --bd-b: rgba(255, 255, 255, 0.55); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.btn-glass:hover { --bg-b: rgba(255, 255, 255, 0.2); --bd-b: #ffffff; transform: translateY(-2px); }
+
+.section > .container { position: relative; z-index: 1; }
+.section { overflow-x: clip; }
+.ambient { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.ambient i {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 115, 240, 0.18), rgba(59, 115, 240, 0) 65%);
+  animation: drift 20s ease-in-out infinite alternate;
+}
+@keyframes drift { to { transform: translate3d(40px, 30px, 0) scale(1.12); } }
+
+/* Reveal on scroll (hidden state is added by script only for content below the fold) */
+.reveal { transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1); transition-delay: calc(var(--i, 0) * 80ms); }
+.reveal.pre { opacity: 0; transform: translateY(32px); }
+.reveal.pre.rv-left { transform: translateX(-48px); }
+.reveal.pre.rv-right { transform: translateX(48px); }
+.reveal.pre.rv-zoom { transform: translateY(24px) scale(0.94); }
+
+/* Hero ------------------------------------------------------------------- */
+.hero {
+  position: relative; isolation: isolate; overflow: hidden; color: #ffffff;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(5.5rem, 10vw, 9rem);
+  background:
+    radial-gradient(70rem 40rem at 85% 0%, #2a5ee0 0%, transparent 60%),
+    radial-gradient(50rem 30rem at 0% 100%, #1b3fa8 0%, transparent 60%),
+    linear-gradient(165deg, #0a1a4f 0%, #0d2470 55%, #123593 100%);
+}
+.hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.blob {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(120, 170, 255, 0.5), rgba(59, 115, 240, 0) 65%);
+  animation: drift 18s ease-in-out infinite alternate;
+}
+.b1 { width: 34rem; height: 34rem; left: -9rem; top: -11rem; }
+.b2 { width: 28rem; height: 28rem; right: -7rem; top: 8%; animation-duration: 22s; animation-delay: -6s; }
+.b3 { width: 24rem; height: 24rem; left: 36%; bottom: -13rem; animation-duration: 26s; animation-delay: -12s; }
+.floor {
+  position: absolute; left: -10%; right: -10%; bottom: -1rem; height: 50%; overflow: hidden;
+  transform: perspective(500px) rotateX(64deg); transform-origin: 50% 100%;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 85%); mask-image: linear-gradient(to top, #000 0%, transparent 85%);
+}
+.floor::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -48px; bottom: 0;
+  background-image: linear-gradient(rgba(159, 192, 255, 0.28) 1px, transparent 1px), linear-gradient(90deg, rgba(159, 192, 255, 0.28) 1px, transparent 1px);
+  background-size: 48px 48px; animation: floor-move 4s linear infinite;
+}
+@keyframes floor-move { to { transform: translateY(48px); } }
+.spark { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #bcd6ff; box-shadow: 0 0 12px 3px rgba(159, 192, 255, 0.6); animation: twinkle 5s ease-in-out infinite; }
+@keyframes twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.7); } 50% { opacity: 0.9; transform: scale(1.2); } }
+.hero-wave { position: absolute; left: 0; right: 0; bottom: -1px; z-index: 2; width: 100%; height: clamp(40px, 6vw, 90px); }
+.hero-wave path { fill: var(--bg); }
+
+.hero-grid { display: grid; gap: 2.5rem; align-items: center; }
+@media (min-width: 960px) { .hero-grid { grid-template-columns: 1.1fr 0.9fr; gap: 2rem; } }
+.hero-copy { min-width: 0; animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes rise { from { transform: translateY(24px); } to { transform: none; } }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.4rem 0.95rem; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.28); color: #dbe7ff;
+  font-weight: 600; font-size: 0.85rem; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: #9fc0ff; flex: none; box-shadow: 0 0 10px 2px rgba(159, 192, 255, 0.8); }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 1.1rem 0; color: #ffffff; text-shadow: 0 8px 30px rgba(0, 10, 50, 0.45); }
+.hero h1 .accent { color: #a9c6ff; }
+.lead { font-size: clamp(1.05rem, 1.6vw, 1.2rem); color: #d6e2ff; max-width: 54ch; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.8rem; }
+.hero-note { margin-top: 1.4rem; color: #b9ceff; font-size: 0.95rem; }
+
+/* 3D stage */
+.hero-visual { min-width: 0; container-type: inline-size; }
+.stage-wrap { position: relative; width: 100%; max-width: 600px; margin-inline: auto; aspect-ratio: 1 / 0.95; font-size: clamp(8.5px, 2.2cqw, 13.5px); perspective: 1500px; }
+.stage3d {
+  position: absolute; inset: 0; transform-style: preserve-3d;
+  transform: rotateX(var(--rx, 10deg)) rotateY(var(--ry, -16deg)); transition: transform 0.3s ease-out;
+}
+.obj {
+  position: absolute; left: var(--l); top: var(--t); width: var(--w, auto); transform-style: preserve-3d;
+  transform: translate3d(calc(var(--mx, 0px) * var(--k, 1)), calc((var(--my, 0px) + var(--sy, 0px)) * var(--k, 1)), var(--z, 0px));
+}
+.bob { transform-style: preserve-3d; animation: bob var(--dur, 7s) ease-in-out infinite; animation-delay: var(--d, 0s); }
+@keyframes bob {
+  0%, 100% { transform: translate3d(0, 0, 0) rotateZ(var(--r0, 0deg)); }
+  50% { transform: translate3d(0, -0.9em, 0) rotateZ(var(--r1, 0deg)); }
+}
+.stage-wrap.paused * { animation-play-state: paused !important; }
+
+.o-shadow { aspect-ratio: 6 / 1; background: radial-gradient(ellipse at center, rgba(2, 8, 40, 0.7), transparent 70%); }
+.slab {
+  position: relative; aspect-ratio: 1 / 0.92; border-radius: 2em;
+  background: linear-gradient(150deg, rgba(130, 175, 255, 0.55) 0%, rgba(23, 64, 184, 0.78) 55%, rgba(10, 26, 79, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 3em rgba(255, 255, 255, 0.12), 0 3em 5em -2em rgba(0, 5, 30, 0.85);
+}
+.slab::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(115deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 38%); }
+.slab .dots { position: absolute; top: 1.4em; left: 1.7em; display: flex; gap: 0.5em; }
+.slab .dots i { width: 0.8em; height: 0.8em; border-radius: 50%; background: rgba(255, 255, 255, 0.55); }
+
+.gcard {
+  padding: 1.1em; border-radius: 1.4em; color: #0a1a4f;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(226, 236, 255, 0.94));
+  box-shadow: 0 2.2em 3em -1.4em rgba(2, 8, 40, 0.75), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+.mini-label { display: flex; align-items: center; gap: 0.5em; margin: 0 0 0.7em; font-size: 0.9em; font-weight: 700; letter-spacing: 0.02em; color: #1740b8; }
+.rec { width: 0.7em; height: 0.7em; border-radius: 50%; background: #e0344a; animation: blink-rec 1.6s ease-in-out infinite; }
+@keyframes blink-rec { 50% { opacity: 0.25; } }
+.vframe { position: relative; aspect-ratio: 16 / 9; border-radius: 1em; background: linear-gradient(135deg, #b9d0ff, #4f86f5 60%, #1740b8); overflow: hidden; }
+.vframe::after { content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.45) 48%, transparent 62%); transform: translateX(-100%); animation: sheen 5s ease-in-out infinite; }
+@keyframes sheen { 0% { transform: translateX(-100%); } 55%, 100% { transform: translateX(100%); } }
+.timecode { position: absolute; left: 0.8em; bottom: 0.6em; z-index: 1; padding: 0.15em 0.55em; border-radius: 0.5em; background: rgba(10, 26, 79, 0.7); color: #ffffff; font-size: 0.8em; font-weight: 600; font-variant-numeric: tabular-nums; }
+.play { position: absolute; inset: 0; margin: auto; width: 3.2em; height: 3.2em; border-radius: 50%; background: #ffffff; box-shadow: 0 0.6em 1.2em -0.4em rgba(10, 26, 79, 0.6); }
+.play::after { content: ""; position: absolute; left: 1.2em; top: 0.9em; border-left: 0.9em solid #2158d9; border-top: 0.7em solid transparent; border-bottom: 0.7em solid transparent; }
+.play.sm { width: 2.4em; height: 2.4em; }
+.play.sm::after { left: 0.9em; top: 0.65em; border-left-width: 0.7em; border-top-width: 0.55em; border-bottom-width: 0.55em; }
+.vbar { height: 0.45em; margin-top: 0.8em; border-radius: 1em; background: #dbe7ff; overflow: hidden; }
+.vbar i { display: block; height: 100%; border-radius: inherit; background: #2158d9; transform-origin: left; animation: progress 6s ease-in-out infinite alternate; }
+@keyframes progress { from { transform: scaleX(0.15); } to { transform: scaleX(0.9); } }
+
+.tracks { position: relative; display: grid; gap: 0.45em; }
+.track { display: flex; gap: 0.3em; height: 1.2em; }
+.track i { border-radius: 0.4em; background: #2158d9; }
+.track:nth-child(2) i { background: #6b9bff; }
+.track:nth-child(3) i { background: #0a1a4f; }
+.track i:nth-child(2) { opacity: 0.75; }
+.playhead { position: absolute; top: -0.4em; bottom: -0.4em; left: 4%; width: 0.22em; border-radius: 1em; background: #e0344a; box-shadow: 0 0 0 0.15em rgba(255, 255, 255, 0.9); animation: scrub 6s linear infinite; }
+@keyframes scrub { from { left: 4%; } to { left: 94%; } }
+
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.35em; }
+.cal-grid i { aspect-ratio: 1; border-radius: 0.35em; background: #e6efff; }
+.cal-grid i.on { background: #3b73f0; }
+.cal-grid i.hl { background: #0a1a4f; animation: pulse-cell 2.4s ease-in-out infinite; }
+@keyframes pulse-cell { 50% { background: #3b73f0; } }
+
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7em; }
+.tile { position: relative; aspect-ratio: 1; border-radius: 1em; display: grid; place-items: center; color: #ffffff; box-shadow: 0 1.4em 2em -1em rgba(2, 8, 40, 0.8), inset 0 0 0 1px rgba(255, 255, 255, 0.35); }
+.tile.t1 { background: linear-gradient(145deg, #6b9bff, #1740b8); }
+.tile.t2 { background: linear-gradient(145deg, #ffffff, #bcd2ff); gap: 0.35em; grid-auto-flow: column; align-content: center; }
+.tile.t2 i { width: 0.7em; height: 0.7em; border-radius: 50%; background: #2158d9; }
+.tile.t2 i:nth-child(2) { opacity: 0.6; }
+.tile.t2 i:nth-child(3) { opacity: 0.3; }
+.tile.t3 { background: linear-gradient(145deg, #3b73f0, #0f2a7a); }
+.tile.t3 .icon { width: 1.8em; height: 1.8em; animation: heartbeat 2s ease-in-out infinite; }
+@keyframes heartbeat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.2); } 30% { transform: scale(1); } }
+
+.design-row { display: flex; align-items: center; gap: 0.8em; }
+.aa { font-family: var(--font-display); font-size: 2.4em; font-weight: 700; line-height: 1; color: #0a1a4f; }
+.sh-circle { width: 2.2em; height: 2.2em; border-radius: 50%; background: #3b73f0; }
+.sh-square { width: 2em; height: 2em; border-radius: 0.5em; background: #0a1a4f; animation: wobble 6s ease-in-out infinite; }
+@keyframes wobble { 0%, 100% { transform: rotate(8deg); } 50% { transform: rotate(28deg); } }
+.swatches { display: flex; gap: 0.5em; margin-top: 0.9em; }
+.swatches i { width: 1em; height: 1em; border-radius: 50%; background: #2158d9; }
+.swatches i:nth-child(2) { background: #6b9bff; }
+.swatches i:nth-child(3) { background: #dbe7ff; box-shadow: inset 0 0 0 1px #b6c9f2; }
+.swatches i:nth-child(4) { background: #0a1a4f; }
+
+.chip { display: inline-block; padding: 0.55em 1.1em; border-radius: 999px; background: #ffffff; color: #0f2a7a; font-weight: 700; white-space: nowrap; box-shadow: 0 1.2em 1.8em -0.9em rgba(2, 8, 40, 0.8); }
+
+.cube { position: relative; width: 4.4em; height: 4.4em; transform-style: preserve-3d; animation: spin 16s linear infinite; }
+@keyframes spin { to { transform: rotateX(360deg) rotateY(360deg); } }
+.cube i { position: absolute; inset: 0; border: 1px solid rgba(255, 255, 255, 0.6); background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(107, 155, 255, 0.3) 60%, rgba(23, 64, 184, 0.5)); }
+.cube i:nth-child(1) { transform: translateZ(2.2em); }
+.cube i:nth-child(2) { transform: rotateY(180deg) translateZ(2.2em); }
+.cube i:nth-child(3) { transform: rotateY(90deg) translateZ(2.2em); }
+.cube i:nth-child(4) { transform: rotateY(-90deg) translateZ(2.2em); }
+.cube i:nth-child(5) { transform: rotateX(90deg) translateZ(2.2em); }
+.cube i:nth-child(6) { transform: rotateX(-90deg) translateZ(2.2em); }
+.sphere { display: block; width: 100%; aspect-ratio: 1; max-width: 6em; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #ffffff, #a9c6ff 32%, #2158d9 72%, #0a1a4f); box-shadow: 0 1.5em 2em -0.8em rgba(2, 8, 40, 0.8); }
+.torus { display: block; width: 100%; max-width: 5.5em; aspect-ratio: 1; border-radius: 50%; border: 0.9em solid #7fa9ff; box-shadow: inset 0 0 0.8em rgba(255, 255, 255, 0.6), 0 0.8em 1.4em -0.4em rgba(2, 8, 40, 0.6); animation: tumble 10s linear infinite; }
+@keyframes tumble { from { transform: rotateY(0deg) rotateX(35deg); } to { transform: rotateY(360deg) rotateX(35deg); } }
+.pill { display: block; width: 9em; height: 2.6em; border-radius: 999px; background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(107, 155, 255, 0.35) 55%, rgba(23, 64, 184, 0.55)); border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 1.2em 1.8em -1em rgba(2, 8, 40, 0.8); }
+
+/* Sections --------------------------------------------------------------- */
+.section-cta { margin-top: clamp(2rem, 4vw, 3rem); }
+.eyebrow-fix { display: none; }
+
+/* Services: bento layout with dimensional cards */
+.service-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(6, 1fr); }
+.service-grid > li { grid-column: span 2; min-width: 0; }
+.service-grid > li:nth-child(n+4):nth-child(-n+5) { grid-column: span 3; }
+.service-grid > li.featured { grid-column: 1 / -1; }
+@media (max-width: 899px) {
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-grid > li, .service-grid > li:nth-child(n+4):nth-child(-n+5) { grid-column: span 1; }
+  .service-grid > li.featured { grid-column: 1 / -1; }
+}
+@media (max-width: 599px) {
+  .service-grid { grid-template-columns: 1fr; }
+  .service-grid > li, .service-grid > li:nth-child(n+4):nth-child(-n+5), .service-grid > li.featured { grid-column: 1 / -1; }
+}
+.service-card {
+  position: relative; height: 100%; padding: 1.9rem 1.7rem 1.8rem; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm);
+  transform-style: preserve-3d;
+  transform: perspective(900px) translateY(var(--lift, 0px)) rotateX(var(--crx, 0deg)) rotateY(var(--cry, 0deg));
+  transition: transform 0.25s ease-out, box-shadow 0.3s ease, border-color 0.3s;
+}
+.service-card::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--c2) 38%, transparent), transparent 55%); opacity: var(--tint-opacity);
+}
+.service-card:hover, .service-card:focus-within { --lift: -8px; box-shadow: var(--shadow-lg); border-color: color-mix(in srgb, var(--c2) 55%, var(--line)); }
+.glare { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity 0.3s; background: radial-gradient(circle at var(--gx, 50%) var(--gy, 0%), rgba(255, 255, 255, 0.3), transparent 55%); }
+.service-card:hover .glare { opacity: 1; }
+.icon-tile {
+  position: relative; z-index: 1; width: 60px; height: 60px; margin-bottom: 1.4rem; display: grid; place-items: center;
+  border-radius: 17px; color: #ffffff; font-size: 1.5rem; background: linear-gradient(145deg, var(--c2), var(--c1));
+  box-shadow: 5px 5px 0 color-mix(in srgb, var(--c2) 38%, var(--surface)), 0 16px 26px -12px var(--c1);
+  transition: transform 0.35s ease; animation: tile-float 5s ease-in-out infinite;
+}
+@keyframes tile-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -4px; } }
+.service-card:hover .icon-tile { transform: translateZ(42px) rotate(-4deg); }
+.service-card h3, .service-card p { position: relative; z-index: 1; }
+.service-card h3 { font-size: 1.3rem; color: var(--ink-strong); margin-bottom: 0.6rem; }
+.service-card p { color: var(--muted); }
+
+.service-card.is-featured {
+  display: grid; gap: 1.4rem 2.5rem; align-items: center; overflow: hidden; color: #ffffff;
+  background: linear-gradient(135deg, #0f2a7a 0%, #1f4fd0 60%, #3b73f0 100%); border-color: rgba(255, 255, 255, 0.25);
+}
+@media (min-width: 800px) { .service-card.is-featured { grid-template-columns: 1fr 1.1fr; } }
+.service-card.is-featured::before { background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.16) 50%, transparent 70%); opacity: 1; transform: translateX(-100%); animation: sheen 6s ease-in-out infinite; }
+.service-card.is-featured h3 { color: #ffffff; }
+.service-card.is-featured p { color: #dbe7ff; }
+.service-card.is-featured .icon-tile { --c1: #0a1a4f; --c2: #6b9bff; }
+.feat-copy { position: relative; z-index: 1; min-width: 0; }
+.flow-chips { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 0.55rem; }
+.flow-chips li { padding: 0.4rem 0.95rem; border-radius: 999px; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.32); font-weight: 600; font-size: 0.92rem; }
+
+/* How we work: animated journey */
+.drive-note {
+  display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 2.5rem; padding: 1.3rem 1.5rem; border-radius: 20px;
+  color: #ffffff; background: linear-gradient(135deg, #0f2a7a, #2158d9); box-shadow: var(--shadow-md);
+}
+.drive-icon { flex: none; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 14px; background: rgba(255, 255, 255, 0.16); font-size: 1.3rem; }
+.drive-note p { font-size: 1.05rem; min-width: 0; }
+
+.path-wrap { position: relative; --progress: 0; }
+.path-wrap::before { content: ""; position: absolute; top: 26px; bottom: 26px; left: 26px; width: 4px; margin-left: -2px; border-radius: 4px; background: var(--line); }
+.path-wrap::after {
+  content: ""; position: absolute; top: 26px; left: 26px; width: 4px; margin-left: -2px; border-radius: 4px;
+  height: calc((100% - 52px) * var(--progress)); background: linear-gradient(var(--grad-a), var(--btn-a)); box-shadow: 0 0 18px rgba(59, 115, 240, 0.8);
+}
+.pulse {
+  position: absolute; z-index: 2; left: 26px; top: 26px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(59, 115, 240, 0.35), 0 0 22px 6px rgba(59, 115, 240, 0.75); animation: travel 7s ease-in-out infinite;
+}
+@keyframes travel { 0% { top: 26px; opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } 100% { top: calc(100% - 26px); opacity: 0; } }
+.path { display: grid; gap: clamp(1.2rem, 3vw, 2rem); }
+.stop { position: relative; z-index: 1; display: grid; grid-template-columns: 52px 1fr; gap: 1.1rem; align-items: start; min-width: 0; }
+.node {
+  position: relative; width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center;
+  background: var(--surface); color: var(--link); border: 2px solid var(--line);
+  font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; transition: transform 0.4s, background-color 0.4s, color 0.4s, box-shadow 0.4s;
+}
+.stop.is-active .node {
+  background: linear-gradient(145deg, var(--grad-a), var(--grad-b)); color: #ffffff; border-color: transparent; transform: scale(1.08);
+  box-shadow: 0 0 0 6px rgba(59, 115, 240, 0.2), 0 14px 24px -10px rgba(23, 64, 184, 0.7);
+}
+.stop.is-active .node::after { content: ""; position: absolute; inset: -7px; border-radius: 20px; border: 2px solid var(--brand-mid); animation: ping 2.2s ease-out infinite; }
+@keyframes ping { from { opacity: 0.9; transform: scale(0.9); } to { opacity: 0; transform: scale(1.25); } }
+.stop-card {
+  position: relative; min-width: 0; padding: 1.4rem 1.5rem; border-radius: 20px; background: var(--surface);
+  border: 1px solid var(--line); box-shadow: var(--shadow-sm); transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+}
+.stop.is-active .stop-card { transform: translateY(-3px); border-color: var(--brand-mid); box-shadow: var(--shadow-md); }
+.step-tag { display: inline-block; margin-bottom: 0.6rem; padding: 0.22rem 0.75rem; border-radius: 999px; font-size: 0.78rem; font-weight: 700; }
+.tag-you { background: var(--tag-you-bg); color: #ffffff; }
+.tag-us { background: var(--tag-us-bg); color: var(--tag-us-fg); }
+.tag-together { background: var(--surface); color: var(--link); box-shadow: inset 0 0 0 2px var(--line); }
+.stop-card h3 { font-size: 1.25rem; color: var(--ink-strong); margin-bottom: 0.4rem; }
+.stop-card p { color: var(--muted); }
+@media (min-width: 860px) {
+  .path-wrap::before, .path-wrap::after, .pulse { left: 50%; }
+  .stop { grid-template-columns: 1fr 52px 1fr; column-gap: 2rem; align-items: center; }
+  .stop .node { grid-column: 2; grid-row: 1; }
+  .stop:nth-child(odd) .stop-card { grid-column: 1; grid-row: 1; text-align: right; }
+  .stop:nth-child(even) .stop-card { grid-column: 3; grid-row: 1; }
+}
+
+/* Why */
+.section:not(.contact) .stack-wrap { filter: drop-shadow(0 30px 30px rgba(10, 26, 79, 0.25)); }
+
+/* Contact: curved top edge */
+.contact { overflow: hidden; }
+.contact::before { content: ""; position: absolute; z-index: 1; top: -1px; left: -5%; right: -5%; height: clamp(24px, 5vw, 60px); background: var(--bg); border-radius: 0 0 50% 50% / 0 0 100% 100%; }
+.contact .ambient i { background: radial-gradient(circle, rgba(107, 155, 255, 0.3), rgba(107, 155, 255, 0) 65%); }
+
+/* Guide ------------------------------------------------------------------ */
+.guide {
+  position: fixed; z-index: 95; left: calc(0.75rem + env(safe-area-inset-left, 0px)); bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: row-reverse; align-items: flex-end; justify-content: flex-end; gap: 0.2rem; max-width: calc(100vw - 5.5rem); pointer-events: none;
+}
+.guide > * { pointer-events: auto; }
+.guide[hidden], .guide-restore[hidden] { display: none; }
+.guide-bubble {
+  position: relative; max-width: 260px; padding: 0.7rem 2.4rem 0.8rem 1rem; border-radius: 18px 18px 18px 6px;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); box-shadow: var(--shadow-md);
+  font-size: 0.92rem; line-height: 1.45; transform-origin: bottom left; min-width: 0; margin-bottom: 1.6rem;
+  visibility: hidden; opacity: 0; transform: translateY(8px) scale(0.96);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+}
+.guide-bubble.is-open { visibility: visible; opacity: 1; transform: none; transition-delay: 0s; }
+.guide-bubble::after { content: ""; position: absolute; left: -7px; bottom: 14px; width: 14px; height: 14px; background: var(--surface); border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); transform: rotate(45deg); }
+.guide-name { margin-bottom: 0.15rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-text); }
+.guide-min {
+  position: absolute; top: 0.35rem; right: 0.35rem; width: 32px; height: 32px; padding: 0; display: grid; place-items: center;
+  border: 0; border-radius: 50%; background: transparent; color: var(--muted); cursor: pointer; transition: background-color 0.2s, color 0.2s;
+}
+.guide-min:hover { background: var(--bg-soft); color: var(--ink-strong); }
+.guide-min .icon { width: 1.1rem; height: 1.1rem; }
+.guide-char { appearance: none; border: 0; background: none; padding: 0; width: 104px; height: 112px; cursor: pointer; border-radius: 24px; -webkit-tap-highlight-color: transparent; }
+.guide-restore {
+  position: fixed; z-index: 95; left: calc(0.75rem + env(safe-area-inset-left, 0px)); bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  width: 56px; height: 56px; padding: 0; display: grid; place-items: center; border-radius: 50%;
+  border: 3px solid var(--bg); background: #0f2a7a; cursor: pointer; box-shadow: var(--shadow-md); animation: tile-float 4s ease-in-out infinite;
+}
+.guide-restore:hover { background: #1740b8; }
+
+.sol { width: 100%; height: 100%; overflow: visible; }
+.sol .sol-tilt { transform-box: view-box; transform-origin: 70px 78px; transform: rotate(var(--tilt, 0deg)); transition: transform 0.7s cubic-bezier(0.3, 1.3, 0.5, 1); }
+.sol .sol-float { animation: sol-bob 4.2s ease-in-out infinite; }
+@keyframes sol-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+.sol .sol-shadow { animation: sol-shadow 4.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes sol-shadow { 50% { transform: scale(0.85); opacity: 0.18; } }
+.sol .sol-antenna { transform-box: view-box; transform-origin: 70px 30px; animation: sway 3.6s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg); } }
+.sol .blink { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
+@keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 97% { transform: scaleY(0.1); } }
+.sol .e, .sol .m { display: none; }
+.sol[data-mood="hello"] .e-open, .sol[data-mood="hello"] .m-smile,
+.sol[data-mood="excited"] .e-open, .sol[data-mood="excited"] .m-grin,
+.sol[data-mood="wink"] .e-wink, .sol[data-mood="wink"] .m-smile,
+.sol[data-mood="happy"] .e-happy, .sol[data-mood="happy"] .m-grin,
+.sol[data-mood="grin"] .e-open, .sol[data-mood="grin"] .m-grin { display: inline; }
+
+.sol .hand { transition: transform 0.7s cubic-bezier(0.3, 1.4, 0.5, 1); }
+.sol .hand-l { transform: translate(var(--lx, 22px), var(--ly, 108px)); }
+.sol .hand-r { transform: translate(var(--rx, 118px), var(--ry, 108px)); }
+.sol[data-pose="wave"] { --rx: 120px; --ry: 50px; --tilt: -3deg; }
+.sol[data-pose="point"] { --rx: 134px; --ry: 80px; --tilt: 4deg; }
+.sol[data-pose="walk"] { --lx: 30px; --ly: 104px; --rx: 110px; --ry: 104px; --tilt: 6deg; }
+.sol[data-pose="cheer"] { --lx: 24px; --ly: 80px; --rx: 116px; --ry: 80px; --tilt: -2deg; }
+.sol[data-pose="call"] { --rx: 114px; --ry: 92px; --tilt: 2deg; }
+.sol .h-in { transform-origin: 0 16px; }
+.sol[data-pose="wave"] .hand-r .h-in { animation: wave 0.7s ease-in-out infinite alternate; }
+@keyframes wave { from { transform: rotate(-22deg); } to { transform: rotate(22deg); } }
+.sol[data-pose="point"] .hand-r .h-in { animation: poke 1s ease-in-out infinite; }
+@keyframes poke { 50% { transform: translateX(7px); } }
+.sol[data-pose="walk"] .hand-l .h-in { animation: swing 0.7s ease-in-out infinite alternate; }
+.sol[data-pose="walk"] .hand-r .h-in { animation: swing 0.7s ease-in-out infinite alternate-reverse; }
+@keyframes swing { from { transform: translateY(-7px); } to { transform: translateY(7px); } }
+.sol .sparks { opacity: 0; transition: opacity 0.4s; }
+.sol[data-pose="cheer"] .sparks { opacity: 1; }
+.sol .sparks path { transform-box: fill-box; transform-origin: center; animation: twinkle 1.6s ease-in-out infinite; }
+.sol .sparks .sp2 { animation-delay: -0.5s; }
+.sol .sparks .sp3 { animation-delay: -1s; }
+.sol .prop-phone { opacity: 0; transition: opacity 0.4s; }
+.sol[data-pose="call"] .prop-phone { opacity: 1; }
+
+/* Mobile and touch: lighter motion, compact guide */
+@media (max-width: 700px), (pointer: coarse) {
+  .floor::before, .blob { animation-duration: 40s; }
+  .cube { animation-duration: 30s; }
+  .torus { animation: none; transform: rotateY(40deg) rotateX(35deg); }
+}
+@media (max-width: 700px) {
+  .stage-wrap { font-size: clamp(7.5px, 2.4cqw, 11px); }
+  .guide-char { width: 70px; height: 76px; }
+  .guide-bubble { max-width: 220px; font-size: 0.86rem; padding: 0.6rem 2.2rem 0.7rem 0.85rem; }
+  .guide-bubble { margin-bottom: 0.9rem; }
+  .guide-restore { width: 50px; height: 50px; }
+  .site-footer { padding-bottom: 8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal.pre { opacity: 1; transform: none; }
+  .hero-copy { animation: none; }
+  .service-card:hover, .service-card:focus-within { --lift: 0px; }
+  .service-card:hover .icon-tile { transform: none; }
+}
+
+</style>
+</head>
+<body>
+<!-- Icon sprite (hidden) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/><path d="M8.8 11.6h.01M12 11.6h.01M15.2 11.6h.01" stroke-width="2.6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.8 7.2 12 13l8.2-5.8"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.3 6.7h.01" stroke-width="2.6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="2.5"/><path d="m15 10.5 6-3.5v10l-6-3.5"/></symbol>
+    <symbol id="i-design" viewBox="0 0 24 24"><circle cx="9" cy="9" r="5"/><rect x="11.5" y="11.5" width="9" height="9" rx="2"/></symbol>
+    <symbol id="i-social" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/></symbol>
+    <symbol id="i-strategy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12h.01" stroke-width="3"/></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M14 14h2M8 17.5h2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5zM3 12.5l9 5 9-5M3 16.5l9 5 9-5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></symbol>
+    <defs>
+      <radialGradient id="solBody" cx=".35" cy=".28" r=".85"><stop offset="0" stop-color="#e8f1ff"/><stop offset=".25" stop-color="#8fb4ff"/><stop offset=".62" stop-color="#2f66e6"/><stop offset="1" stop-color="#0c2270"/></radialGradient>
+      <radialGradient id="solHand" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#b8d1ff"/><stop offset="1" stop-color="#4a7cf0"/></radialGradient>
+      <linearGradient id="solVisor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a3a95"/><stop offset="1" stop-color="#071445"/></linearGradient>
+      <linearGradient id="solRing" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#6b9bff"/></linearGradient>
+    </defs>
+</svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Social Solution, back to top">
+        <span class="brand-mark" aria-hidden="true">SS</span>
+        <span class="brand-text">Social Solution</span>
+      </a>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-we-work">How We Work</a></li>
+          <li><a href="#why-us">Why Social Solution</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="#contact">Let's Talk</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero on-dark" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+        <span class="floor"></span>
+        <span class="spark" style="left:6%;top:20%"></span>
+        <span class="spark" style="left:44%;top:12%;animation-delay:-2s"></span>
+        <span class="spark" style="left:52%;top:70%;animation-delay:-3.4s"></span>
+        <span class="spark" style="left:92%;top:44%;animation-delay:-1s"></span>
+        <span class="spark" style="left:24%;top:78%;animation-delay:-4.2s"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Creative agency · Your in-house-style content team</p>
+          <h1 id="hero-title">Your <span class="accent">Digital Growth Partner</span></h1>
+          <p class="lead">Social Solution works like an in-house creative team for your brand. We plan, edit, design and publish your content, so you can focus on recording.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="tel:+919263286987" aria-label="Call Now: dial +91 92632 86987">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#i-phone"/></svg>Call Now
+            </a>
+            <a class="btn btn-glass" href="https://wa.me/919263286987" target="_blank" rel="noopener" aria-label="WhatsApp Us: chat on +91 92632 86987 (opens in a new tab)">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp Us
+            </a>
+          </div>
+          <p class="hero-note">Made for creators, coaches, educators, founders, professionals and businesses.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="stage-wrap">
+            <div class="stage3d">
+
+              <div class="obj o-shadow" style="--l:6%;--t:86%;--w:76%;--z:-90px;--k:.2"></div>
+
+              <div class="obj" style="--l:3%;--t:5%;--w:80%;--z:0px;--k:.4">
+                <div class="bob" style="--dur:9s"><div class="slab"><div class="dots"><i></i><i></i><i></i></div></div></div>
+              </div>
+
+              <div class="obj" style="--l:8%;--t:14%;--w:50%;--z:70px;--k:.8">
+                <div class="bob" style="--dur:7s;--d:-1s;--r0:-1deg;--r1:1deg">
+                  <div class="gcard">
+                    <p class="mini-label"><span class="rec"></span>Video editing</p>
+                    <div class="vframe"><span class="timecode">00:24</span><span class="play"></span></div>
+                    <div class="vbar"><i></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="obj" style="--l:5%;--t:57%;--w:52%;--z:115px;--k:1">
+                <div class="bob" style="--dur:8s;--d:-3s;--r0:1deg;--r1:-1deg">
+                  <div class="gcard">
+                    <p class="mini-label">Timeline</p>
+                    <div class="tracks">
+                      <div class="track"><i style="flex:3"></i><i style="flex:2"></i><i style="flex:4"></i></div>
+                      <div class="track"><i style="flex:1"></i><i style="flex:5"></i><i style="flex:2"></i></div>
+                      <div class="track"><i style="flex:4"></i><i style="flex:3"></i><i style="flex:2"></i></div>
+                      <span class="playhead"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="obj" style="--l:60%;--t:2%;--w:35%;--z:130px;--k:1.1">
+                <div class="bob" style="--dur:7.5s;--d:-2s;--r0:2deg;--r1:-1deg">
+                  <div class="gcard">
+                    <p class="mini-label">Content plan</p>
+                    <div class="cal-grid"><i></i><i class="on"></i><i></i><i></i><i class="hl"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="obj" style="--l:57%;--t:27%;--w:39%;--z:175px;--k:1.3">
+                <div class="bob" style="--dur:6.5s;--d:-4s">
+                  <div class="tiles">
+                    <span class="tile t1"><span class="play sm"></span></span>
+                    <span class="tile t2"><i></i><i></i><i></i></span>
+                    <span class="tile t3"><svg class="icon icon-fill" aria-hidden="true"><use href="#i-heart"/></svg></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="obj" style="--l:53%;--t:50%;--w:41%;--z:150px;--k:1.2">
+                <div class="bob" style="--dur:8.5s;--d:-1.5s;--r0:-2deg;--r1:1deg">
+                  <div class="gcard">
+                    <p class="mini-label">Graphic design</p>
+                    <div class="design-row"><span class="aa">Aa</span><span class="sh-circle"></span><span class="sh-square"></span></div>
+                    <div class="swatches"><i></i><i></i><i></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="obj" style="--l:3%;--t:33%;--z:200px;--k:1.5"><div class="bob" style="--dur:6s;--d:-4s"><span class="chip">Plan</span></div></div>
+              <div class="obj" style="--l:60%;--t:75%;--z:215px;--k:1.6"><div class="bob" style="--dur:6.4s;--d:-1.5s"><span class="chip">Edit</span></div></div>
+              <div class="obj" style="--l:30%;--t:85%;--z:195px;--k:1.4"><div class="bob" style="--dur:6.8s;--d:-2.5s"><span class="chip">Publish</span></div></div>
+
+              <div class="obj o-cube" style="--l:81%;--t:73%;--z:140px;--k:1.5">
+                <div class="bob" style="--dur:8s"><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              </div>
+              <div class="obj" style="--l:5%;--t:77%;--w:8em;--z:190px;--k:1.7"><div class="bob" style="--dur:7s;--d:-5s"><span class="sphere"></span></div></div>
+              <div class="obj" style="--l:83%;--t:-3%;--w:7em;--z:100px;--k:.9"><div class="bob" style="--dur:9s;--d:-2s"><span class="torus"></span></div></div>
+              <div class="obj" style="--l:66%;--t:91%;--z:120px;--k:1.1"><div class="bob" style="--dur:7s;--d:-3s;--r0:-14deg;--r1:-10deg"><span class="pill"></span></div></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,60 C240,118 480,8 720,52 C960,96 1200,18 1440,62 L1440,120 L0,120 Z"/></svg>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="ambient" aria-hidden="true"><i style="width:30rem;height:30rem;left:-10rem;top:-6rem"></i><i style="width:26rem;height:26rem;right:-8rem;bottom:-4rem;animation-delay:-8s"></i></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Services</span>
+          <h2 id="services-title">Everything your content needs, in one place</h2>
+          <p>From the first idea to the published post, we cover the creative work behind your social media.</p>
+        </div>
+
+        <ul class="service-grid">
+          <li class="reveal rv-zoom" style="--i:0">
+            <article class="service-card" data-tilt style="--c1:#2158d9;--c2:#6b9bff">
+              <span class="glare" aria-hidden="true"></span>
+              <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></div>
+              <h3>Video Editing</h3>
+              <p>Clean, well-paced edits of your raw footage for reels, shorts and longer videos, with captions and graphics where they help.</p>
+            </article>
+          </li>
+          <li class="reveal rv-zoom" style="--i:1">
+            <article class="service-card" data-tilt style="--c1:#4f46e5;--c2:#8f8af2">
+              <span class="glare" aria-hidden="true"></span>
+              <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-design"/></svg></div>
+              <h3>Graphic Designing</h3>
+              <p>Thumbnails, post designs and carousels that match your brand, so your profile looks consistent and recognisable.</p>
+            </article>
+          </li>
+          <li class="reveal rv-zoom" style="--i:2">
+            <article class="service-card" data-tilt style="--c1:#0369a1;--c2:#4fb6ea">
+              <span class="glare" aria-hidden="true"></span>
+              <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-social"/></svg></div>
+              <h3>Social Media Management</h3>
+              <p>We handle uploading and scheduling on your accounts, with your permission, so your content goes out on a steady rhythm.</p>
+            </article>
+          </li>
+          <li class="reveal rv-zoom" style="--i:0">
+            <article class="service-card" data-tilt style="--c1:#0f2a7a;--c2:#4f6cc0">
+              <span class="glare" aria-hidden="true"></span>
+              <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-strategy"/></svg></div>
+              <h3>Content Strategy</h3>
+              <p>A clear direction for what to post, why, and for whom, shaped around your goals and your audience.</p>
+            </article>
+          </li>
+          <li class="reveal rv-zoom" style="--i:1">
+            <article class="service-card" data-tilt style="--c1:#0e7490;--c2:#52c3de">
+              <span class="glare" aria-hidden="true"></span>
+              <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-plan"/></svg></div>
+              <h3>Content Research &amp; Planning</h3>
+              <p>Topic ideas and a content calendar prepared in advance, so you always know what to record next.</p>
+            </article>
+          </li>
+          <li class="featured reveal" style="--i:0">
+            <article class="service-card is-featured" data-tilt style="--c1:#3b5bdb;--c2:#8ea2f0">
+              <span class="glare" aria-hidden="true"></span>
+              <div class="feat-copy">
+                <div class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
+                <h3>Overall Content Management</h3>
+                <p>The whole process in one place, handled by one team while you focus on recording.</p>
+              </div>
+              <ul class="flow-chips" aria-label="What overall content management covers">
+                <li>Content planning</li>
+                <li>Research</li>
+                <li>Video editing</li>
+                <li>Creative direction</li>
+                <li>Graphics where needed</li>
+                <li>Uploading or scheduling, with your permission</li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+
+        <div class="section-cta reveal">
+          <p>Not sure which service fits you? Tell us about your content.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://wa.me/919263286987" target="_blank" rel="noopener" aria-label="WhatsApp Us about services (opens in a new tab)">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp Us
+            </a>
+            <a class="btn btn-secondary" href="#contact">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="section section-tint journey" id="how-we-work" aria-labelledby="how-title">
+      <div class="ambient" aria-hidden="true"><i style="width:28rem;height:28rem;right:-9rem;top:4rem"></i><i style="width:24rem;height:24rem;left:-8rem;bottom:2rem;animation-delay:-10s"></i></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">How We Work</span>
+          <h2 id="how-title">A simple process, from topic to published post</h2>
+          <p>Our content management service is built around one idea: you record, and we manage the rest.</p>
+        </div>
+
+        <div class="drive-note reveal">
+          <span class="drive-icon" aria-hidden="true"><svg class="icon"><use href="#i-upload"/></svg></span>
+          <p><strong>You provide the raw footage.</strong> You record videos on the topics we agree on and upload them to Google Drive. Social Solution handles the planning, research, editing, creative direction, graphics where needed, and the uploading or scheduling.</p>
+        </div>
+
+        <div class="path-wrap" id="path">
+          <span class="pulse" aria-hidden="true"></span>
+          <ol class="path">
+            <li class="stop reveal rv-left" style="--i:0">
+              <div class="node" aria-hidden="true">1</div>
+              <div class="stop-card"><span class="step-tag tag-together">Together</span><h3><span class="visually-hidden">Step 1: </span>Plan the topics</h3><p>We agree on topics together. We handle the research and content planning, so you know what to record.</p></div>
+            </li>
+            <li class="stop reveal rv-right" style="--i:0">
+              <div class="node" aria-hidden="true">2</div>
+              <div class="stop-card"><span class="step-tag tag-you">You</span><h3><span class="visually-hidden">Step 2: </span>Record your videos</h3><p>You record on the agreed topics, in your own voice and at your own pace.</p></div>
+            </li>
+            <li class="stop reveal rv-left" style="--i:0">
+              <div class="node" aria-hidden="true">3</div>
+              <div class="stop-card"><span class="step-tag tag-you">You</span><h3><span class="visually-hidden">Step 3: </span>Upload the raw footage</h3><p>You upload the raw footage to Google Drive, and we pick it up from there.</p></div>
+            </li>
+            <li class="stop reveal rv-right" style="--i:0">
+              <div class="node" aria-hidden="true">4</div>
+              <div class="stop-card"><span class="step-tag tag-us">Social Solution</span><h3><span class="visually-hidden">Step 4: </span>Edit and create</h3><p>We edit your videos and guide the creative direction, with graphics added where needed.</p></div>
+            </li>
+            <li class="stop reveal rv-left" style="--i:0">
+              <div class="node" aria-hidden="true">5</div>
+              <div class="stop-card"><span class="step-tag tag-together">Together</span><h3><span class="visually-hidden">Step 5: </span>Review</h3><p>You review the finished content and share your feedback before it goes live.</p></div>
+            </li>
+            <li class="stop reveal rv-right" style="--i:0">
+              <div class="node" aria-hidden="true">6</div>
+              <div class="stop-card"><span class="step-tag tag-us">Social Solution</span><h3><span class="visually-hidden">Step 6: </span>Publish</h3><p>With your permission, we upload or schedule the content on your social media accounts.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-cta reveal">
+          <p>Ready to hand over the editing and planning? Let's talk about your content.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="tel:+919263286987" aria-label="Call Now: dial +91 92632 86987">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="#i-phone"/></svg>Call Now
+            </a>
+            <a class="btn btn-secondary" href="#contact">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY SOCIAL SOLUTION -->
+    <section class="section" id="why-us" aria-labelledby="why-title">
+      <div class="ambient" aria-hidden="true"><i style="width:30rem;height:30rem;left:-12rem;top:2rem"></i><i style="width:26rem;height:26rem;right:-9rem;bottom:0;animation-delay:-9s"></i></div>
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-copy reveal">
+            <span class="kicker">Why Social Solution</span>
+            <h2 id="why-title">A creative partner that works like your own team</h2>
+            <p>Social Solution works like an in-house creative team for creators, coaches, educators, founders, professionals and businesses. You get one partner for the content process, without having to hire and manage a full team yourself.</p>
+            <ul class="audience" aria-label="Who we work with">
+              <li>Creators</li><li>Coaches</li><li>Educators</li><li>Founders</li><li>Professionals</li><li>Businesses</li>
+            </ul>
+          </div>
+
+          <div class="stack-wrap reveal" aria-hidden="true">
+            <div class="stack">
+              <div class="plate p1"></div>
+              <div class="plate p2"></div>
+              <div class="plate p3"></div>
+              <div class="plate p4"></div>
+            </div>
+            <ul class="stack-legend">
+              <li class="l1">Plan</li><li class="l2">Edit</li><li class="l3">Design</li><li class="l4">Publish</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="benefits">
+          <li class="reveal" style="--i:0">
+            <span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <div><h3>One team, one process</h3><p>Planning, editing, design and publishing sit with the same team, so nothing gets lost between separate people.</p></div>
+          </li>
+          <li class="reveal" style="--i:1">
+            <span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <div><h3>You focus on recording</h3><p>You bring the ideas and the raw footage. We take care of the rest of the content process.</p></div>
+          </li>
+          <li class="reveal" style="--i:2">
+            <span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <div><h3>A consistent look</h3><p>Creative direction keeps your videos and graphics aligned with your brand.</p></div>
+          </li>
+          <li class="reveal" style="--i:0">
+            <span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <div><h3>You stay in control</h3><p>You review your content, and we upload or schedule posts only with your permission.</p></div>
+          </li>
+          <li class="reveal" style="--i:1">
+            <span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <div><h3>Proposals made for you</h3><p>Every client has different goals, so proposals are customised to your content and your needs.</p></div>
+          </li>
+          <li class="reveal" style="--i:2">
+            <span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <div><h3>Easy to reach</h3><p>Talk to us by phone, WhatsApp, email or Instagram, whichever you prefer.</p></div>
+          </li>
+        </ul>
+
+        <div class="section-cta reveal">
+          <p>Want a proposal built around your content? Get in touch.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#contact">Let's Talk</a>
+            <a class="btn btn-secondary" href="https://wa.me/919263286987" target="_blank" rel="noopener" aria-label="WhatsApp Us for a proposal (opens in a new tab)">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact on-dark" id="contact" aria-labelledby="contact-title">
+      <div class="ambient" aria-hidden="true"><i style="width:34rem;height:34rem;left:-10rem;top:-6rem"></i><i style="width:30rem;height:30rem;right:-8rem;bottom:-8rem;animation-delay:-7s"></i></div>
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="kicker">Contact</span>
+          <h2 id="contact-title">Let's talk about your content</h2>
+          <p>Tell us about your content and what you'd like to achieve. We'll put together a customised proposal for you.</p>
+          <p class="founder">Mahi Singh · Founder &amp; CEO</p>
+        </div>
+
+        <ul class="contact-grid">
+          <li class="reveal" style="--i:0">
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true"><svg class="icon icon-fill"><use href="#i-phone"/></svg></span>
+              <h3>Call</h3>
+              <div class="value-row"><p class="contact-value">+91 92632 86987</p><button class="copy-btn" type="button" data-copy="+91 92632 86987" aria-label="Copy phone number">Copy</button></div>
+              <a class="btn btn-light" href="tel:+919263286987" aria-label="Call Now: dial +91 92632 86987">Call Now</a>
+            </div>
+          </li>
+          <li class="reveal" style="--i:1">
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-chat"/></svg></span>
+              <h3>WhatsApp</h3>
+              <p class="contact-value">+91 92632 86987</p>
+              <a class="btn btn-light" href="https://wa.me/919263286987" target="_blank" rel="noopener" aria-label="Chat on WhatsApp with +91 92632 86987 (opens in a new tab)">Chat on WhatsApp</a>
+            </div>
+          </li>
+          <li class="reveal" style="--i:2">
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-mail"/></svg></span>
+              <h3>Email</h3>
+              <div class="value-row"><p class="contact-value">socialsolution.bussiness@<wbr>gmail.com</p><button class="copy-btn" type="button" data-copy="socialsolution.bussiness@gmail.com" aria-label="Copy email address">Copy</button></div>
+              <a class="btn btn-light" href="mailto:socialsolution.bussiness@gmail.com" aria-label="Send an Email to socialsolution.bussiness@gmail.com">Send an Email</a>
+            </div>
+          </li>
+          <li class="reveal" style="--i:3">
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true"><svg class="icon"><use href="#i-insta"/></svg></span>
+              <h3>Instagram</h3>
+              <p class="contact-value">@socialsolution.official</p>
+              <a class="btn btn-light" href="https://www.instagram.com/socialsolution.official/" target="_blank" rel="noopener" aria-label="Visit Instagram profile @socialsolution.official (opens in a new tab)">Visit Instagram</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <p id="copy-status" class="visually-hidden" role="status" aria-live="polite"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top" aria-label="Social Solution, back to top">
+          <span class="brand-mark" aria-hidden="true">SS</span>
+          <span class="brand-text">Social Solution</span>
+        </a>
+        <p>Your Digital Growth Partner. A creative agency that works like an in-house creative team.</p>
+        <p class="footer-founder">Mahi Singh, Founder &amp; CEO</p>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Contact</h2>
+        <ul>
+          <li><a href="tel:+919263286987">+91 92632 86987</a></li>
+          <li><a href="https://wa.me/919263286987" target="_blank" rel="noopener">WhatsApp: +91 92632 86987<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="mailto:socialsolution.bussiness@gmail.com">socialsolution.bussiness@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/socialsolution.official/" target="_blank" rel="noopener">@socialsolution.official<span class="visually-hidden"> on Instagram (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-title">Explore</h2>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-we-work">How We Work</a></li>
+          <li><a href="#why-us">Why Social Solution</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-light btn-sm footer-wa" href="https://wa.me/919263286987" target="_blank" rel="noopener" aria-label="WhatsApp Us (opens in a new tab)">
+          <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Social Solution. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/919263286987" target="_blank" rel="noopener" aria-label="Chat with Social Solution on WhatsApp (opens in a new tab)">
+    <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+    <span class="wa-label">WhatsApp</span>
+  </a>
+
+  <aside class="guide" id="guide" aria-label="Sol, your guide to Social Solution">
+    <div class="guide-bubble is-open" id="guide-bubble">
+      <p class="guide-name">Sol · your guide</p>
+      <p class="guide-text" id="guide-text" role="status" aria-live="polite">Hi! I'll show you how Social Solution can help with your content.</p>
+      <button class="guide-min" id="guide-min" type="button" aria-label="Minimise guide">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <button class="guide-char" id="guide-char" type="button" aria-label="Sol, your guide. Show or hide the message" aria-expanded="true" aria-controls="guide-bubble">
+      <svg class="sol" id="sol" viewBox="0 0 140 150" data-pose="wave" data-mood="hello" aria-hidden="true" focusable="false">
+        <ellipse class="sol-shadow" cx="70" cy="141" rx="30" ry="6" fill="#0a1a4f" opacity=".28"/>
+        <g class="sol-tilt">
+          <g class="sol-float">
+            <g class="sol-antenna">
+              <line x1="70" y1="30" x2="70" y2="16" stroke="#9fc0ff" stroke-width="3" stroke-linecap="round"/>
+              <rect x="59" y="2" width="22" height="15" rx="5" fill="#ffffff"/>
+              <path d="M67 6.2 L75.5 9.5 L67 12.8 Z" fill="#2158d9"/>
+            </g>
+            <ellipse cx="70" cy="74" rx="62" ry="15" fill="none" stroke="url(#solRing)" stroke-width="3" opacity=".55" transform="rotate(-14 70 74)"/>
+            <circle cx="70" cy="74" r="44" fill="url(#solBody)"/>
+            <path d="M32 58 A40 40 0 0 1 60 33" fill="none" stroke="#ffffff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+            <ellipse cx="52" cy="43" rx="15" ry="7" fill="#ffffff" opacity=".45" transform="rotate(-32 52 43)"/>
+            <path d="M8 74 A62 15 0 0 0 132 74" fill="none" stroke="url(#solRing)" stroke-width="3.5" stroke-linecap="round" transform="rotate(-14 70 74)"/>
+            <rect x="35" y="56" width="70" height="34" rx="17" fill="url(#solVisor)" stroke="#ffffff" stroke-opacity=".4"/>
+            <path d="M46 60 H94" stroke="#ffffff" stroke-opacity=".16" stroke-width="3" stroke-linecap="round"/>
+            <g class="eyes">
+              <g class="e e-open"><ellipse class="blink" cx="55" cy="69" rx="5.5" ry="7" fill="#ffffff"/><ellipse class="blink" cx="85" cy="69" rx="5.5" ry="7" fill="#ffffff"/></g>
+              <g class="e e-happy" fill="none" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round"><path d="M49 72 Q55 63 61 72"/><path d="M79 72 Q85 63 91 72"/></g>
+              <g class="e e-wink"><ellipse cx="55" cy="69" rx="5.5" ry="7" fill="#ffffff"/><path d="M79 71 Q85 64 91 71" fill="none" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round"/></g>
+            </g>
+            <g class="mouths">
+              <path class="m m-smile" d="M62 80 Q70 87 78 80" fill="none" stroke="#9fe3ff" stroke-width="3" stroke-linecap="round"/>
+              <path class="m m-grin" d="M62 79 Q70 91 78 79 Z" fill="#9fe3ff" stroke="#9fe3ff" stroke-width="2" stroke-linejoin="round"/>
+            </g>
+            <g class="sparks" fill="#ffffff">
+              <path class="sp1" d="M12 30 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/>
+              <path class="sp2" d="M126 22 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+              <path class="sp3" d="M122 118 l1.8 4.4 4.4 1.8 -4.4 1.8 -1.8 4.4 -1.8 -4.4 -4.4 -1.8 4.4 -1.8z"/>
+            </g>
+            <g class="hand hand-l"><g class="h-in"><circle r="9.5" fill="url(#solHand)"/></g></g>
+            <g class="hand hand-r">
+              <g class="prop-phone"><rect x="-6.5" y="-24" width="13" height="23" rx="3.5" fill="#0a1a4f" stroke="#9fc0ff" stroke-width="1.5"/><circle cx="0" cy="-5" r="1.4" fill="#9fc0ff"/></g>
+              <g class="h-in"><circle r="9.5" fill="url(#solHand)"/></g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </aside>
+  <button class="guide-restore" id="guide-restore" type="button" hidden aria-label="Bring back Sol, your guide">
+    <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true" focusable="false">
+      <circle cx="20" cy="21" r="17" fill="url(#solBody)"/>
+      <rect x="9" y="16" width="22" height="11" rx="5.5" fill="url(#solVisor)" stroke="#fff" stroke-opacity=".4"/>
+      <circle cx="16" cy="21" r="2.2" fill="#fff"/><circle cx="24" cy="21" r="2.2" fill="#fff"/>
+      <ellipse cx="14" cy="11" rx="5" ry="2.4" fill="#fff" opacity=".5" transform="rotate(-30 14 11)"/>
+    </svg>
+  </button>
+
+<script>
+(() => {
+  'use strict';
+  const doc = document;
+  const $ = (s, r = doc) => r.querySelector(s);
+  const $$ = (s, r = doc) => Array.from(r.querySelectorAll(s));
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+
+  /* Footer year */
+  const yearEl = $('#year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* Header */
+  const header = $('.site-header');
+  const toggle = $('.nav-toggle');
+  const nav = $('#primary-nav');
+  const setNav = (open) => {
+    if (!toggle || !nav) return;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    nav.classList.toggle('is-open', open);
+  };
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => setNav(toggle.getAttribute('aria-expanded') !== 'true'));
+    nav.addEventListener('click', (e) => { if (e.target.closest('a')) setNav(false); });
+    doc.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { setNav(false); toggle.focus(); }
+    });
+    window.matchMedia('(min-width: 860px)').addEventListener('change', (e) => { if (e.matches) setNav(false); });
+  }
+
+  /* Copy buttons */
+  const status = $('#copy-status');
+  $$('.copy-btn').forEach((btn) => {
+    const original = btn.textContent;
+    btn.addEventListener('click', async () => {
+      const text = btn.dataset.copy || '';
+      const target = btn.previousElementSibling;
+      let message = 'Copied';
+      try { await navigator.clipboard.writeText(text); }
+      catch (err) {
+        message = 'Selected';
+        try {
+          const range = doc.createRange(); range.selectNodeContents(target);
+          const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+        } catch (e) { message = 'Select to copy'; }
+      }
+      btn.textContent = message;
+      if (status) status.textContent = message === 'Copied' ? text + ' copied' : text + ' selected, copy it manually';
+      setTimeout(() => { btn.textContent = original; }, 2000);
+    });
+  });
+
+  /* ---------- Guide (Sol) ---------- */
+  const guide = $('#guide');
+  const bubble = $('#guide-bubble');
+  const textEl = $('#guide-text');
+  const sol = $('#sol');
+  const charBtn = $('#guide-char');
+  const minBtn = $('#guide-min');
+  const restoreBtn = $('#guide-restore');
+
+  const STEPS = {
+    home: { pose: 'wave', mood: 'hello', text: "Hi! I'll show you how Social Solution can help with your content." },
+    services: { pose: 'point', mood: 'wink', text: 'Six services, one team. Hover or tap a card to take a closer look.' },
+    'how-we-work': { pose: 'walk', mood: 'excited', text: 'You record and upload to Google Drive. We handle everything after that, step by step.' },
+    'why-us': { pose: 'cheer', mood: 'happy', text: 'Think of us as your in-house creative team, without the hiring.' },
+    contact: { pose: 'call', mood: 'grin', text: 'Ready to talk? Call, WhatsApp, email or message us on Instagram.' }
+  };
+  let current = 'home';
+  let minimized = false;
+  let hideTimer = 0;
+
+  try { minimized = localStorage.getItem('ss-guide-min') === '1'; } catch (e) { minimized = false; }
+
+  const setBubble = (open) => {
+    if (!bubble) return;
+    bubble.classList.toggle('is-open', open);
+    if (charBtn) charBtn.setAttribute('aria-expanded', String(open));
+  };
+  const showBubble = () => {
+    setBubble(true);
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => setBubble(false), 9000);
+  };
+  const applyStep = (key, speak) => {
+    const s = STEPS[key];
+    if (!s || !sol) return;
+    sol.setAttribute('data-pose', s.pose);
+    sol.setAttribute('data-mood', s.mood);
+    if (textEl) textEl.textContent = s.text;
+    if (speak && !minimized) showBubble();
+  };
+  const setMinimized = (value, focusTarget) => {
+    minimized = value;
+    try { localStorage.setItem('ss-guide-min', value ? '1' : '0'); } catch (e) { /* storage unavailable */ }
+    if (guide) guide.hidden = value;
+    if (restoreBtn) restoreBtn.hidden = !value;
+    if (value) { clearTimeout(hideTimer); if (restoreBtn && focusTarget) restoreBtn.focus(); }
+    else { applyStep(current, true); if (charBtn && focusTarget) charBtn.focus(); }
+  };
+
+  if (minBtn) minBtn.addEventListener('click', () => setMinimized(true, true));
+  if (restoreBtn) restoreBtn.addEventListener('click', () => setMinimized(false, true));
+  if (charBtn) charBtn.addEventListener('click', () => {
+    if (bubble.classList.contains('is-open')) { clearTimeout(hideTimer); setBubble(false); } else { showBubble(); }
+  });
+  if (minimized) { guide.hidden = true; restoreBtn.hidden = false; } else { hideTimer = setTimeout(() => setBubble(false), 9000); }
+
+  /* Track the section in the middle of the screen: drives the guide and the nav highlight */
+  const links = new Map();
+  if (nav) $$('a[href^="#"]', nav).forEach((a) => links.set(a.getAttribute('href').slice(1), a));
+  const ids = ['home', 'services', 'how-we-work', 'why-us', 'contact'];
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach((l) => l.removeAttribute('aria-current'));
+        if (links.has(id) && window.scrollY >= 120) links.get(id).setAttribute('aria-current', 'true');
+        if (id !== current) { current = id; applyStep(id, true); }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ids.forEach((id) => { const el = doc.getElementById(id); if (el) io.observe(el); });
+  }
+
+  /* ---------- Scroll-linked work: header, parallax, journey ---------- */
+  const hero = $('.hero');
+  const stage = $('.stage3d');
+  const stageWrap = $('.stage-wrap');
+  const path = $('#path');
+  const stops = $$('.stop');
+  let ticking = false;
+
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY;
+    if (header) header.classList.toggle('is-scrolled', y > 8);
+    if (y < 120) $$('.nav a[aria-current]').forEach((a) => a.removeAttribute('aria-current'));
+
+    if (stage && !reduceMotion.matches && y < (hero ? hero.offsetHeight * 1.2 : 900)) {
+      stage.style.setProperty('--sy', (-y * 0.07).toFixed(1) + 'px');
+    }
+    if (path) {
+      const r = path.getBoundingClientRect();
+      const mid = window.innerHeight * 0.55;
+      const p = clamp((mid - r.top) / Math.max(r.height, 1), 0, 1);
+      path.style.setProperty('--progress', p.toFixed(3));
+      stops.forEach((s) => {
+        const n = $('.node', s).getBoundingClientRect();
+        s.classList.toggle('is-active', n.top + n.height / 2 < mid);
+      });
+    }
+  };
+  const requestUpdate = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+  window.addEventListener('scroll', requestUpdate, { passive: true });
+  window.addEventListener('resize', requestUpdate);
+  update();
+
+  /* Hero: pointer parallax and pausing when off screen */
+  if (hero && stage && finePointer.matches) {
+    let frame = 0, rx = 10, ry = -16, mx = 0, my = 0;
+    const apply = () => {
+      frame = 0;
+      stage.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+      stage.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+      stage.style.setProperty('--mx', mx.toFixed(1) + 'px');
+      stage.style.setProperty('--my', my.toFixed(1) + 'px');
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(apply); };
+    hero.addEventListener('pointermove', (e) => {
+      if (reduceMotion.matches) return;
+      const r = hero.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      ry = -16 + px * 16; rx = 10 - py * 12; mx = px * -14; my = py * -10;
+      schedule();
+    });
+    hero.addEventListener('pointerleave', () => { rx = 10; ry = -16; mx = 0; my = 0; schedule(); });
+  }
+  if (stageWrap && 'IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => {
+      entries.forEach((e) => stageWrap.classList.toggle('paused', !e.isIntersecting));
+    }, { rootMargin: '100px' }).observe(stageWrap);
+  }
+
+  /* Service cards: tilt and glare on mouse devices */
+  if (finePointer.matches) {
+    $$('[data-tilt]').forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        if (reduceMotion.matches) return;
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width;
+        const py = (e.clientY - r.top) / r.height;
+        card.style.setProperty('--cry', ((px - 0.5) * 12).toFixed(2) + 'deg');
+        card.style.setProperty('--crx', ((0.5 - py) * 10).toFixed(2) + 'deg');
+        card.style.setProperty('--gx', (px * 100).toFixed(0) + '%');
+        card.style.setProperty('--gy', (py * 100).toFixed(0) + '%');
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--cry', '0deg');
+        card.style.setProperty('--crx', '0deg');
+      });
+    });
+  }
+
+  /* Reveal on scroll. Everything is visible at rest; content still below the
+     screen is prepared for its entrance on the first scroll or key press. */
+  let revealReady = false;
+  const initReveal = () => {
+    if (revealReady) return;
+    revealReady = true;
+    if (reduceMotion.matches || !('IntersectionObserver' in window)) return;
+    const vh = window.innerHeight;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.remove('pre'); obs.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    $$('.reveal').forEach((el) => {
+      if (el.getBoundingClientRect().top > vh * 0.92) { el.classList.add('pre'); obs.observe(el); }
+    });
+  };
+  ['scroll', 'wheel', 'touchmove', 'keydown'].forEach((evt) => window.addEventListener(evt, initReveal, { once: true, passive: true }));
+})();
+</script>
+</body>
+</html>
